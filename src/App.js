@@ -8,7 +8,6 @@ import GlobalStyle from "./styles/global";
 const App = (props) => {
   return (
     <ThemeProvider theme={primaryTheme}>
-      <GlobalStyle />
       <Container
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
@@ -39,6 +38,7 @@ const App = (props) => {
           />
         </Bottom>
       </Container>
+      <GlobalStyle />
     </ThemeProvider>
   );
 };
