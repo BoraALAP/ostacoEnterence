@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/static/js/main.7e2fabaf.chunk.js",
-    "main.js.map": "/static/js/main.7e2fabaf.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.498e6f6b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.498e6f6b.js.map",
-    "static/js/2.2bdd66d3.chunk.js": "/static/js/2.2bdd66d3.chunk.js",
-    "static/js/2.2bdd66d3.chunk.js.map": "/static/js/2.2bdd66d3.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.a8a7998a3c34b880c4a6223ca6bca271.js": "/precache-manifest.a8a7998a3c34b880c4a6223ca6bca271.js",
-    "service-worker.js": "/service-worker.js",
-    "static/js/2.2bdd66d3.chunk.js.LICENSE.txt": "/static/js/2.2bdd66d3.chunk.js.LICENSE.txt"
+    "main.js": "/ostacoEnterence/static/js/main.d55f8736.chunk.js",
+    "main.js.map": "/ostacoEnterence/static/js/main.d55f8736.chunk.js.map",
+    "runtime-main.js": "/ostacoEnterence/static/js/runtime-main.ecd0fb95.js",
+    "runtime-main.js.map": "/ostacoEnterence/static/js/runtime-main.ecd0fb95.js.map",
+    "static/js/2.53a1497e.chunk.js": "/ostacoEnterence/static/js/2.53a1497e.chunk.js",
+    "static/js/2.53a1497e.chunk.js.map": "/ostacoEnterence/static/js/2.53a1497e.chunk.js.map",
+    "index.html": "/ostacoEnterence/index.html",
+    "precache-manifest.f51892994d7b5db1f7016f0d6ef927c6.js": "/ostacoEnterence/precache-manifest.f51892994d7b5db1f7016f0d6ef927c6.js",
+    "service-worker.js": "/ostacoEnterence/service-worker.js",
+    "static/js/2.53a1497e.chunk.js.LICENSE.txt": "/ostacoEnterence/static/js/2.53a1497e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.498e6f6b.js",
-    "static/js/2.2bdd66d3.chunk.js",
-    "static/js/main.7e2fabaf.chunk.js"
+    "static/js/runtime-main.ecd0fb95.js",
+    "static/js/2.53a1497e.chunk.js",
+    "static/js/main.d55f8736.chunk.js"
   ]
 }
