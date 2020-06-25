@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "37e94d9ef02c8b63e0e46cb3f55b8454",
+    "revision": "5ec087d852f202028e7302c588699fb8",
     "url": "/ostacoEnterence/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ostacoEnterence/static/js/2.53a1497e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b5f7b7f7a6594f9a49f2",
-    "url": "/ostacoEnterence/static/js/main.47731a23.chunk.js"
+    "revision": "b732e7948ad1b35fb107",
+    "url": "/ostacoEnterence/static/js/main.6cc884b2.chunk.js"
   },
   {
     "revision": "68ce86a9ab7c43e52df2",

@@ -76,11 +76,13 @@ const Bottom = styled.div`
 const Left = styled.div`
   display: grid;
   height: 6.5vw;
+  max-height: 90px;
   background-color: ${({ theme }) => theme.color.secondary};
 `;
 const Right = styled(motion.div)`
   display: grid;
   height: 6.5vw;
+  max-height: 90px;
   background-color: ${({ theme }) => theme.color.secondary};
 `;
 

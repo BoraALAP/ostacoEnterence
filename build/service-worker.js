@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ostacoEnterence/precache-manifest.1e0a1b8d32a36111035fa1c8cf3d2c69.js"
+  "/ostacoEnterence/precache-manifest.b1e1e6189f74ebb75e4da28d67bdaef0.js"
 );
 
 self.addEventListener('message', (event) => {
