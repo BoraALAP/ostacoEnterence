@@ -74,13 +74,23 @@ const Bottom = styled.div`
   display: grid;
 `;
 const Left = styled.div`
+  @media (max-width: 768px) {
+    min-height: 50px;
+    height: 8.5vw;
+  }
   display: grid;
+  min-height: 70px;
   height: 6.5vw;
   max-height: 90px;
   background-color: ${({ theme }) => theme.color.secondary};
 `;
 const Right = styled(motion.div)`
+  @media (max-width: 768px) {
+    min-height: 50px;
+    height: 8.5vw;
+  }
   display: grid;
+  min-height: 70px;
   height: 6.5vw;
   max-height: 90px;
   background-color: ${({ theme }) => theme.color.secondary};
