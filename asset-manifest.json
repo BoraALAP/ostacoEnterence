@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/ostacoEnterence/static/js/main.47731a23.chunk.js",
-    "main.js.map": "/ostacoEnterence/static/js/main.47731a23.chunk.js.map",
+    "main.js": "/ostacoEnterence/static/js/main.6cc884b2.chunk.js",
+    "main.js.map": "/ostacoEnterence/static/js/main.6cc884b2.chunk.js.map",
     "runtime-main.js": "/ostacoEnterence/static/js/runtime-main.ecd0fb95.js",
     "runtime-main.js.map": "/ostacoEnterence/static/js/runtime-main.ecd0fb95.js.map",
     "static/js/2.53a1497e.chunk.js": "/ostacoEnterence/static/js/2.53a1497e.chunk.js",
     "static/js/2.53a1497e.chunk.js.map": "/ostacoEnterence/static/js/2.53a1497e.chunk.js.map",
     "index.html": "/ostacoEnterence/index.html",
-    "precache-manifest.1e0a1b8d32a36111035fa1c8cf3d2c69.js": "/ostacoEnterence/precache-manifest.1e0a1b8d32a36111035fa1c8cf3d2c69.js",
+    "precache-manifest.b1e1e6189f74ebb75e4da28d67bdaef0.js": "/ostacoEnterence/precache-manifest.b1e1e6189f74ebb75e4da28d67bdaef0.js",
     "service-worker.js": "/ostacoEnterence/service-worker.js",
     "static/js/2.53a1497e.chunk.js.LICENSE.txt": "/ostacoEnterence/static/js/2.53a1497e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ecd0fb95.js",
     "static/js/2.53a1497e.chunk.js",
-    "static/js/main.47731a23.chunk.js"
+    "static/js/main.6cc884b2.chunk.js"
   ]
 }
