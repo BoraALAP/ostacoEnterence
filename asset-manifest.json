@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/static/js/main.761276e0.chunk.js",
-    "main.js.map": "/static/js/main.761276e0.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.498e6f6b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.498e6f6b.js.map",
-    "static/js/2.ab7c6c75.chunk.js": "/static/js/2.ab7c6c75.chunk.js",
-    "static/js/2.ab7c6c75.chunk.js.map": "/static/js/2.ab7c6c75.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.1351b8724b2a2296d6aef240992fbb57.js": "/precache-manifest.1351b8724b2a2296d6aef240992fbb57.js",
-    "service-worker.js": "/service-worker.js",
-    "static/js/2.ab7c6c75.chunk.js.LICENSE.txt": "/static/js/2.ab7c6c75.chunk.js.LICENSE.txt",
-    "static/media/favicon.ico": "/static/media/favicon.74f78037.ico",
-    "static/media/safari-pinned-tab.svg": "/static/media/safari-pinned-tab.e38462f9.svg",
-    "static/media/site.webmanifest": "/static/media/site.55eafa23.webmanifest"
+    "main.js": "/ostacoEnterence/static/js/main.cf128734.chunk.js",
+    "main.js.map": "/ostacoEnterence/static/js/main.cf128734.chunk.js.map",
+    "runtime-main.js": "/ostacoEnterence/static/js/runtime-main.ecd0fb95.js",
+    "runtime-main.js.map": "/ostacoEnterence/static/js/runtime-main.ecd0fb95.js.map",
+    "static/js/2.7c781b1e.chunk.js": "/ostacoEnterence/static/js/2.7c781b1e.chunk.js",
+    "static/js/2.7c781b1e.chunk.js.map": "/ostacoEnterence/static/js/2.7c781b1e.chunk.js.map",
+    "index.html": "/ostacoEnterence/index.html",
+    "precache-manifest.dce1c0e04e8fa55f80f3d8d37124757b.js": "/ostacoEnterence/precache-manifest.dce1c0e04e8fa55f80f3d8d37124757b.js",
+    "service-worker.js": "/ostacoEnterence/service-worker.js",
+    "static/js/2.7c781b1e.chunk.js.LICENSE.txt": "/ostacoEnterence/static/js/2.7c781b1e.chunk.js.LICENSE.txt",
+    "static/media/favicon.ico": "/ostacoEnterence/static/media/favicon.74f78037.ico",
+    "static/media/safari-pinned-tab.svg": "/ostacoEnterence/static/media/safari-pinned-tab.e38462f9.svg",
+    "static/media/site.webmanifest": "/ostacoEnterence/static/media/site.55eafa23.webmanifest"
   },
   "entrypoints": [
-    "static/js/runtime-main.498e6f6b.js",
-    "static/js/2.ab7c6c75.chunk.js",
-    "static/js/main.761276e0.chunk.js"
+    "static/js/runtime-main.ecd0fb95.js",
+    "static/js/2.7c781b1e.chunk.js",
+    "static/js/main.cf128734.chunk.js"
   ]
 }
