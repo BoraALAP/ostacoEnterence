@@ -1,6 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import { Helmet } from "react-helmet";
+import favicon from "../components/assets/fav/favicon.ico";
+import fav16 from "../components/assets/fav/favicon-16x16.png";
+import fav32 from "../components/assets/fav/favicon-32x32.png";
+import manifest from "../components/assets/fav/site.webmanifest";
+import apple from "../components/assets/fav/apple-touch-icon.png";
+import safari from "../components/assets/fav/safari-pinned-tab.svg";
 
 const Meta = (props) => {
   return (
@@ -9,6 +15,16 @@ const Meta = (props) => {
         <meta charSet="utf-8" />
         <title>Ostaco - Coming Soon</title>
         <link rel="canonical" href="http://ostaco.com" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href={favicon} />
+        <meta name="theme-color" content="#000000" />
+        <link rel="apple-touch-icon" sizes="180x180" href={apple} />
+        <link rel="icon" type="image/png" sizes="32x32" href={fav32} />
+        <link rel="icon" type="image/png" sizes="16x16" href={fav16} />
+        <link rel="manifest" href={manifest} />
+        <link rel="mask-icon" href={safari} color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
         <meta
           name="description"
           content="Ostaco windows are custom made-to-order and designed to make a statement in your home. Contact us today to order the perfect windows and doors for your home."

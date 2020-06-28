@@ -24,7 +24,7 @@ const App = (props) => {
               Coming Soon.
             </h1>
             <h4>
-              Respect Tradition, <br />
+              Respect Tradition <br />
               Challenge Convention.
             </h4>
             <a href="http://ostaco.com/website/">Go to Ostaco site</a>
