@@ -16,17 +16,17 @@ const GlobalStyle = createGlobalStyle`
 
   h1{
     @media (max-width: 375px) {
-      font-size: 22px;
+      font-size: 18px;
   }
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 700;
   }
 
   h4{
     @media (max-width: 375px) {
-      font-size: 18px;
+      font-size: 16px;
   }
-    font-size: 22px;
+    font-size: 20px;
     line-height: 27px;
     font-weight: 500;
   }

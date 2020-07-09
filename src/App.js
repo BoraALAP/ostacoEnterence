@@ -16,25 +16,24 @@ const App = (props) => {
         <Top
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
-          transition={{ ease: "easeOut", duration: 0.5, delay: 0.75 }}
+          transition={{ ease: ["easeOut"], duration: 0.5, delay: 1.55 }}
         >
           <TopRight>
             <h1>
-              New Look in the Making <br />
-              Coming Soon.
+              New Look in the Making.
             </h1>
             <h4>
               Respect Tradition <br />
               Challenge Convention.
             </h4>
-            <a href="http://ostaco.com/website/">Go to Ostaco site</a>
+        
           </TopRight>
         </Top>
         <Bottom>
           <Left />
           <Right
             animate={{ rotate: -20, transformOrigin: "bottom right" }}
-            transition={{ ease: "easeOut", duration: 1.25, delay: 1.5 }}
+            transition={{ ease: [.35,0,.23,1], duration: 1.25, delay: .5 }}
           />
         </Bottom>
       </Container>
@@ -75,7 +74,7 @@ const Bottom = styled.div`
 `;
 const Left = styled.div`
   @media (max-width: 768px) {
-    min-height: 50px;
+    min-height: 40px;
     height: 8.5vw;
   }
   display: grid;
@@ -86,7 +85,7 @@ const Left = styled.div`
 `;
 const Right = styled(motion.div)`
   @media (max-width: 768px) {
-    min-height: 50px;
+    min-height: 40px;
     height: 8.5vw;
   }
   display: grid;
