@@ -1,11 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;700;800;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&display=swap');
 
   body{
     font-family: ${({ theme }) => theme.font.family.main};
-    font-weight: 600;
+    font-weight: 400;
     margin: 0;
     color: ${({ theme }) => theme.color.grey};
   }
@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 18px;
   }
     font-size: 26px;
-    font-weight: 700;
+    font-weight: 600;
   }
 
   h4{
@@ -28,7 +28,7 @@ const GlobalStyle = createGlobalStyle`
   }
     font-size: 20px;
     line-height: 27px;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   a{

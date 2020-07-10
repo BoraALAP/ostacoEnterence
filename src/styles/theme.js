@@ -1,7 +1,7 @@
 export const primaryTheme = {
   font: {
     family: {
-      main: "'Muli', sans-serif",
+      main: "'Heebo', sans-serif",
     },
   },
   color: {
