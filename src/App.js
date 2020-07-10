@@ -52,8 +52,8 @@ const Top = styled(motion.div)`
     padding: 48px;
     box-sizing: border-box;
   }
-  padding-bottom: 48px;
-  min-height: 40vh;
+  padding-bottom: 6vw;
+    min-height: 30vh;
   align-content: end;
   width: 50vw;
   justify-self: end;
@@ -82,6 +82,10 @@ const Left = styled.div`
   height: 6.5vw;
   max-height: 90px;
   background-color: ${({ theme }) => theme.color.secondary};
+  @media (min-width: 1440px) {
+    max-height: 160px;
+  
+  }
 `;
 const Right = styled(motion.div)`
   @media (max-width: 768px) {
@@ -92,6 +96,10 @@ const Right = styled(motion.div)`
   min-height: 70px;
   height: 6.5vw;
   max-height: 90px;
+  @media (min-width: 1440px) {
+    max-height: 160px;
+  
+  }
   background-color: ${({ theme }) => theme.color.secondary};
 `;
 

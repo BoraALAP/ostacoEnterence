@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
   }
     font-size: 15px;
     font-weight: 500;
-    &:visited{
+    &:visited, &:active {
       color: ${({ theme }) => theme.color.grey};
     }
   }
