@@ -11,12 +11,12 @@ const App = (props) => {
       <Container
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
-        transition={{ ease: "easeOut", duration: 0.25, delay: 0.25 }}
+        transition={{ ease: "easeOut", duration: 0.25, delay: 1.25 }}
       >
         <Top
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
-          transition={{ ease: ["easeOut"], duration: 0.5, delay: 1.55 }}
+          transition={{ ease: ["easeOut"], duration: 0.5, delay: 2.75 }}
         >
           <TopRight>
             <h1>
@@ -26,14 +26,14 @@ const App = (props) => {
               Respect Tradition <br />
               Challenge Convention.
             </h4>
-        
+            <a href="http://ostaco.com/website/">Go to Ostaco Website</a>
           </TopRight>
         </Top>
         <Bottom>
           <Left />
           <Right
             animate={{ rotate: -20, transformOrigin: "bottom right" }}
-            transition={{ ease: [.35,0,.23,1], duration: 1.25, delay: .5 }}
+            transition={{ ease: [.35,0,.23,1], duration: 1.25, delay: 1.5 }}
           />
         </Bottom>
       </Container>
