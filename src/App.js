@@ -1,11 +1,35 @@
-import React from "react";
-import styled, { ThemeProvider } from "styled-components";
+import React, { useState, useEffect } from "react";
+import styled, { ThemeProvider} from "styled-components";
 import { motion } from "framer-motion";
 
 import { primaryTheme } from "./styles/theme";
 import GlobalStyle from "./styles/global";
 
 const App = (props) => {
+  const [dimensions, setDimensions] = useState(0);
+  const [degree, setDegree] = useState(0);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    function handleResize() {
+      setDimensions(window.innerWidth);
+    }
+    window.addEventListener("resize", handleResize);
+  });
+
+  useEffect(() => {
+    //375 width = -24deg
+    //2560 width = -12deg
+
+    //-24deg -------------  -12deg
+    //375w ---------------  2560w
+    let widthCalc = ((dimensions - 375) * 100) / (2560 - 375);
+    setDegree((-2 * widthCalc) / 100 - 20);
+    setHeight((-2 * widthCalc) / 100 + 9.5);
+
+    console.log(widthCalc, degree, height);
+  }, [dimensions, degree, height]);
+
   return (
     <ThemeProvider theme={primaryTheme}>
       <Container
@@ -19,9 +43,7 @@ const App = (props) => {
           transition={{ ease: ["easeOut"], duration: 0.5, delay: 2.75 }}
         >
           <TopRight>
-            <h1>
-              New Look in the Making.
-            </h1>
+            <h1>New Look in the Making.</h1>
             <h4>
               Respect Tradition <br />
               Challenge Convention.
@@ -30,10 +52,15 @@ const App = (props) => {
           </TopRight>
         </Top>
         <Bottom>
-          <Left />
+          <Left height={height} />
           <Right
-            animate={{ rotate: -20, transformOrigin: "bottom right" }}
-            transition={{ ease: [.35,0,.23,1], duration: 1.25, delay: 1.5 }}
+            height={height}
+            animate={{ rotate: degree, transformOrigin: "bottom right" }}
+            transition={{
+              ease: [0.35, 0, 0.23, 1],
+              duration: 1.25,
+              delay: 1.5,
+            }}
           />
         </Bottom>
       </Container>
@@ -53,7 +80,7 @@ const Top = styled(motion.div)`
     box-sizing: border-box;
   }
   padding-bottom: 6vw;
-    min-height: 30vh;
+  min-height: 30vh;
   align-content: end;
   width: 50vw;
   justify-self: end;
@@ -73,33 +100,19 @@ const Bottom = styled.div`
   display: grid;
 `;
 const Left = styled.div`
-  @media (max-width: 768px) {
-    min-height: 40px;
-    height: 8.5vw;
-  }
+
   display: grid;
-  min-height: 70px;
-  height: 6.5vw;
-  max-height: 90px;
+
+  height: ${props => `${props.height}vw`};
+
   background-color: ${({ theme }) => theme.color.secondary};
-  @media (min-width: 1440px) {
-    max-height: 160px;
-  
-  }
+
 `;
+
 const Right = styled(motion.div)`
-  @media (max-width: 768px) {
-    min-height: 40px;
-    height: 8.5vw;
-  }
+
   display: grid;
-  min-height: 70px;
-  height: 6.5vw;
-  max-height: 90px;
-  @media (min-width: 1440px) {
-    max-height: 160px;
-  
-  }
+  height:  ${props => `${props.height}vw`};
   background-color: ${({ theme }) => theme.color.secondary};
 `;
 
