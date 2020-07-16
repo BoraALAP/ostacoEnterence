@@ -107,6 +107,7 @@ const Left = styled.div`
 
   /* height: ${props => `${props.height}vw`}; */
   height: 6.25vw;
+  min-height: 23px;
   max-height: 160px;
   background-color: ${({ theme }) => theme.color.secondary};
 
@@ -116,6 +117,7 @@ const Right = styled(motion.div)`
 
   display: grid;
   /* height:  ${props => `${props.height}vw`}; */
+  min-height: 23px;
   height: 6.25vw;
   max-height: 160px;
   background-color: ${({ theme }) => theme.color.secondary};
