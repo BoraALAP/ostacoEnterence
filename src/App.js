@@ -25,7 +25,7 @@ const App = (props) => {
     //375w ---------------  2560w
     let widthCalc = ((dimensions - 375) * 100) / (2560 - 375);
     setDegree((-2 * widthCalc) / 100 - 20);
-    setHeight((-2 * widthCalc) / 100 + 9.5);
+    setHeight((-2 * widthCalc) / 100 +2);
 
     console.log(widthCalc, degree, height);
   }, [dimensions, degree, height]);
@@ -52,10 +52,12 @@ const App = (props) => {
           </TopRight>
         </Top>
         <Bottom>
-          <Left height={height} />
+          <Left 
+          // height={height} 
+          />
           <Right
-            height={height}
-            animate={{ rotate: degree, transformOrigin: "bottom right" }}
+            // height={height}
+            animate={{ rotate: -17, transformOrigin: "bottom right" }}
             transition={{
               ease: [0.35, 0, 0.23, 1],
               duration: 1.25,
@@ -103,8 +105,9 @@ const Left = styled.div`
 
   display: grid;
 
-  height: ${props => `${props.height}vw`};
-
+  /* height: ${props => `${props.height}vw`}; */
+  height: 6.25vw;
+  max-height: 160px;
   background-color: ${({ theme }) => theme.color.secondary};
 
 `;
@@ -112,7 +115,9 @@ const Left = styled.div`
 const Right = styled(motion.div)`
 
   display: grid;
-  height:  ${props => `${props.height}vw`};
+  /* height:  ${props => `${props.height}vw`}; */
+  height: 6.25vw;
+  max-height: 160px;
   background-color: ${({ theme }) => theme.color.secondary};
 `;
 
