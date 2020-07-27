@@ -2,10 +2,14 @@ import React, { useState, useEffect } from "react";
 import styled, { ThemeProvider} from "styled-components";
 import { motion } from "framer-motion";
 
+
 import { primaryTheme } from "./styles/theme";
 import GlobalStyle from "./styles/global";
+import { BrowserRouter as Router, Route, Redirect, useHistory } from "react-router-dom";
 
 const App = (props) => {
+
+  let history = useHistory();
   const [dimensions, setDimensions] = useState(0);
   const [degree, setDegree] = useState(0);
   const [height, setHeight] = useState(0);
@@ -16,6 +20,13 @@ const App = (props) => {
     }
     window.addEventListener("resize", handleResize);
   });
+
+  useEffect(() => {
+    setTimeout(() => {
+      history.push('/ostaco')
+    },6000)
+  })
+  
 
   useEffect(() => {
     //375 width = -24deg
@@ -32,6 +43,12 @@ const App = (props) => {
 
   return (
     <ThemeProvider theme={primaryTheme}>
+      <Router>
+        <Route path='/ostaco'  component={() => { 
+     window.location.href = 'http://ostaco.com/website/'; 
+     return null;
+}}/>
+        <Route path="/" render={() => (
       <Container
         animate={{ opacity: 1 }}
         initial={{ opacity: 0 }}
@@ -66,6 +83,8 @@ const App = (props) => {
           />
         </Bottom>
       </Container>
+      )} />
+      </Router>
       <GlobalStyle />
     </ThemeProvider>
   );
